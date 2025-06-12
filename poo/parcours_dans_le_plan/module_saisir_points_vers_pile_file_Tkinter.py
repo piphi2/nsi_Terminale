@@ -104,7 +104,7 @@ def saisir_points_graphiquement(choix = 'file'):
             py - l_aile * math.sin(angle + angle_aile)
         )
         # Dessiner le corps et les ailes de la flèche
-        canevas.create_line([ (mx, my_pix), (px, py) ], fill=couleur, width=2)
+        canevas.create_line([ (mx, my), (px, py) ], fill=couleur, width=2)
         canevas.create_line([ (px, py), aile1 ], fill=couleur, width=2)
         canevas.create_line([ (px, py), aile2 ], fill=couleur, width=2)
 
@@ -123,7 +123,7 @@ def saisir_points_graphiquement(choix = 'file'):
             x0, y0 = points[i-1]
             x1, y1 = points[i]
             canevas.create_line(x0, y0, x1, y1, fill="blue")
-            #dessiner_fleche(x0, y0, x1, y1, taille=32, couleur="green")
+            dessiner_fleche(x0, y0, x1, y1, taille=32, couleur="green")
 
     def fermer():
         racine.destroy()
@@ -141,4 +141,4 @@ def saisir_points_graphiquement(choix = 'file'):
 
 
 if __name__ == "__main__":
-    saisir_points_graphiquement('pile')
+    points = saisir_points_graphiquement('pile')
