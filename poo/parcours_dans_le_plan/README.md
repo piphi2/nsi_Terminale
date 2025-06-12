@@ -10,6 +10,7 @@
     + calculer la longueur totale du chemin
     + changer l'ordre des points pour minimiser la longueur (approche gloutonne)
     + ...
+    + des idées à explorer dans le fichier "exercices_chasles"
 
 ### Fichier à exécuter : 
 Parcours_dans_le_plan_avec_modules.py  
